@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container" style="background-color: rgb(3, 27, 63)">
+    <!--Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+a. A Bootstrap styled table representing your choice of data.
+b. A Bootstrap styled form that allows users to add input data as a new row to the table when submitted.
+-->
+    <br />
+    <div
+      class="card"
+      style="background-color: rgb(7, 59, 75); color: rgb(255, 255, 255)"
+    >
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div>
+              <label for="new-critic-score">Critic score</label>
+              <input
+                type="text"
+                class="form-control"
+                id="new-critic-score"
+                placeholder="score out of 100"
+              />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div>
+              <label for="new-personal-score">Personal score</label>
+              <input
+                type="text"
+                class="form-control"
+                id="new-personal-score"
+                placeholder="score out of 100"
+              />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div>
+              <label for="hours-played">Hours played</label>
+              <input
+                type="text"
+                class="form-control"
+                id="hours-played"
+                placeholder="hours"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div>
+              <label for="Game-name">Game name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Game-name"
+                placeholder="Game title"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div>
+            <br />
+            <button id="image" class="btn btn-secondary from-control">
+              add image
+            </button>
+            <button id="add" class="btn btn-primary from-control">
+              Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>game image</th>
+        <th>games played</th>
+        <th>Hours played</th>
+        <th>critic score</th>
+        <th>personal score</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+
